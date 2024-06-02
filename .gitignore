@@ -1,4 +1,4 @@
---iww
+
 local cloneref = cloneref or function(x) return x end
 
 local UserInputService = cloneref(game:GetService("UserInputService"))
@@ -30,7 +30,7 @@ local OrionLib = {
             Main = Color3.fromRGB(0, 0, 0),
 			Second = Color3.fromRGB(0, 0, 0),
 			Stroke = Color3.fromRGB(255,255, 255),
-			Divider = Color3.fromRGB(255, 255, 255),
+            Divider = Color3.fromRGB(255, 0, 0)
 			Text = Color3.fromRGB(255, 255, 255),
 			TextDark = Color3.fromRGB(255, 255, 255)
 		}
@@ -663,8 +663,8 @@ function OrionLib:MakeWindow(WindowConfig)
 			QuickCapture.Position = UDim2.new(0.465, 0, 0, 40)
 			QuickCapture.Size = UDim2.new(0, 100, 0, 33)
 			QuickCapture.Font = Enum.Font.SourceSansBold
-			QuickCapture.Text = "O/C"
-			QuickCapture.TextColor3 = Color3.fromRGB(255, 255, 255)
+			QuickCapture.Text = "Saturn Hub"
+			QuickCapture.TextColor3 = Color3.fromRGB(1, 1, 1)
 			QuickCapture.TextSize = 20.000
 			QuickCapture.Style = Enum.ButtonStyle.RobloxButtonDefault
 			QuickCapture.TextWrapped = true
@@ -1801,5 +1801,5 @@ end
 function OrionLib:Destroy()
 	Orion:Destroy()
 end
---o/c
+--saturn hub
 return OrionLib
