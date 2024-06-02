@@ -1,4 +1,4 @@
-
+--iww
 local cloneref = cloneref or function(x) return x end
 
 local UserInputService = cloneref(game:GetService("UserInputService"))
@@ -658,13 +658,13 @@ function OrionLib:MakeWindow(WindowConfig)
 			ScreenGui.Name = "Show"
 			local QuickCapture = Instance.new("TextButton", ScreenGui)
 			QuickCapture.Name = "UI"
-			QuickCapture.BackgroundColor3 = Color3.fromRGB(85, 0, 255)
+			QuickCapture.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 			QuickCapture.BackgroundTransparency = 0.14
 			QuickCapture.Position = UDim2.new(0.465, 0, 0, 40)
 			QuickCapture.Size = UDim2.new(0, 100, 0, 33)
 			QuickCapture.Font = Enum.Font.SourceSansBold
 			QuickCapture.Text = "O/C"
-			QuickCapture.TextColor3 = Color3.fromRGB(255, 0, 0)
+			QuickCapture.TextColor3 = Color3.fromRGB(255, 255, 255)
 			QuickCapture.TextSize = 20.000
 			QuickCapture.Style = Enum.ButtonStyle.RobloxButtonDefault
 			QuickCapture.TextWrapped = true
@@ -957,7 +957,7 @@ function OrionLib:MakeWindow(WindowConfig)
 					Size = UDim2.new(1, 0, 1, 0)
 				})
 
-				local ToggleBox = SetChildren(SetProps(MakeElement("RoundFrame", ToggleConfig.Color, 0, 4), {
+				local ToggleBox = SetChildren(SetProps(MakeElement("RoundFrame", ToggleConfig.Color, 255, 255), {
 					Size = UDim2.new(0, 24, 0, 24),
 					Position = UDim2.new(1, -24, 0.5, 0),
 					AnchorPoint = Vector2.new(0.5, 0.5)
@@ -1801,5 +1801,5 @@ end
 function OrionLib:Destroy()
 	Orion:Destroy()
 end
---toggle
+--o/c
 return OrionLib
